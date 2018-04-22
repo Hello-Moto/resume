@@ -10,6 +10,12 @@ a{
     padding: 0px;
     margin: 0px;
 }
+ul,ol{
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+}
 hr{
     height: 0px;
     border: 0;
@@ -89,10 +95,11 @@ hr{
     background-color: rgba(0,0,0,0.8);
 }
 .usercard{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     max-width: 940px;
     margin: 0 auto;
     background: #fff;
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
 }
 .usercard .welcome{
    background:  #e35c64;
@@ -159,4 +166,152 @@ hr{
     width: 30px;
     height: 40px;
     fill: #fff;
+    border-top;
+}
+body > main{
+    margin-top: -340px;
+}
+body > main .button{
+    font-size: 15px;
+    line-height: 16px;
+    display: inline-block;
+    padding: 21px 55px;
+    border: 1px solid #cbcdcf;
+    border-radius: 3px;
+    color: #404651;
+    font-weight: 700;
+}
+body > main .downloadResume{
+    text-align:center;
+    margin: 36px 0 42px 0;
+}
+body > main .button:hover{
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.5);
+    transition: box-shadow 0.2s;
+}
+.selfIntroduce{
+    max-width: 940px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 26px;
+}
+section.skills,section.sample{
+    max-width: 940px;
+    margin: 60px auto 0;
+}
+section.skills > h2,section.sample > h2{
+    text-align: center;
+    color: #3d4451;
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+section.skills > ol{
+    background: #fff;
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    padding: 43px 20px 10px 50px;
+    margin-top: 30px;
+}
+section.skills > ol > li{
+    float: left;
+    width:50%;
+    box-sizing: border-box;
+    padding-right: 30px;
+}
+section.skills .progress{
+    height: 5px;
+    background: #F9DEE0;
+    width: 100%; 
+    margin: 4px 0 43px;
+    border-radius: 12px;
+}
+section.skills .progressBar{
+    height: 100%;
+    background: #E35C64;
+    width: 70%;
+    border-radius: 12px;
+}
+section.skills h3{
+    font-size: 14px;
+    line-height: 1.1;
+    padding-right: 40px;
+}
+section.skills .progressBar2{
+    width: 80%;
+}
+section.skills .progressBar3{
+    width: 65%;
+}
+section.skills .progressBar4{
+    width: 90%;
+}
+section.skills .progressBar5{
+    width: 68%;
+}
+section.skills .progressBar6{
+    width: 95%;
+}
+section.sample{
+    text-align: center;
+}
+section.sample > nav{
+    display: inline-block;
+    text-align: center;
+
+}
+section.sample > nav > ol{ 
+    display: inline-block;
+    margin-top: 30px;
+    vertical-align: top;
+}
+section.sample > nav > ol li{
+    float: left;
+    margin-right: 40px;
+    cursor: pointer;
+}
+section.sample > nav > ol li:nth-child(3){
+    margin-right: 0;
+}
+section.sample > nav .bar{
+    background: #fff;
+    /* border: 1px solid red; */
+    height: 5px;
+    border-radius: 3px;
+    margin-top: 15px;
+}
+section.sample > nav .bar .nbar{
+    height: 100%;
+    background: #e35c64;
+    border-radius: 3px;
+}
+section.sample > nav .bar.state-1 .nbar{
+    margin-left: 0;
+    width: 50px;
+}
+section.sample > nav .bar.state-2 .nbar{
+    margin-left: 67px;
+    width: 50px;
+}
+section.sample > nav .bar.state-3 .nbar{
+    margin-left: 140px;
+    width: 96px;
+}
+section.sample > .works{
+    position: relative;
+    /* border: 1px solid red; */
+    height: 576px;
+    margin-top: 30px;
+}
+section.sample > .works .big,
+section.sample > .works .small1,
+section.sample > .works .small2{
+    position: absolute;
+}
+section.sample > .works .small1{
+    top: 0px;
+    left: 644px;
+}
+section.sample > .works .small2{
+    top: 298px;
+    left: 644px;
 }
