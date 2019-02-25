@@ -63,7 +63,8 @@ hr{height: 0px;border: 0;border-top: 1px solid #dadada;
     padding-bottom: 5px;
     position: relative;
 }
-.topnavbar nav > ul > li.active > a::after{
+.topnavbar nav > ul > li.active > a::after,
+.topnavbar nav > ul > li.highlight > a::after{
     content: "";
     display: block;
     position: absolute;
@@ -261,12 +262,18 @@ section.skills .progress{
     width: 100%; 
     margin: 4px 0 43px;
     border-radius: 12px;
+    overflow: hidden;
 }
 section.skills .progressBar{
     height: 100%;
     background: #E35C64;
     width: 70%;
     border-radius: 12px;
+    transform: translateX(0);
+    transition: all 1s;
+}
+section.skills.offset .progressBar{
+    transform: translateX(-100%);
 }
 section.skills h3{
     font-size: 14px;
