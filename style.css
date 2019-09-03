@@ -1,80 +1,22 @@
-body{background: #efefef; margin: 0px;
-}
-a{color: inherit; text-decoration: none;
-}
-*{padding: 0px; margin: 0px;
-}
-ul,ol{list-style: none;
-}
-h1,h2,h3,h4,h5,h6{font-weight: normal;
-}
-hr{height: 0px;border: 0;border-top: 1px solid #dadada;
-}
-.fl{float: left;
-}
-.fr{float: right;
-}
-.clearfix::after{content: "";display: block;clear:both;
-}
-.topnavbar{
-    padding: 20px 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    transition: all 0.5s;
-    color: #b7b7b7;
-}
-.topnavbar.sticky{
-    background: #fff;
-    padding: 10px 0;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    z-index: 1;
-    color: #3d4451;
-}
-.topnavbar-c{
-    padding: 0 16px;
-}
-.topnavbar nav{
-    padding-top: 6px;
-    padding-bottom: 2px;
-}
-.topnavbar nav>ul{
-    list-style: none;
-    margin:0;
-    padding: 0;
-    /* border: 1px solid red; */
-}
-.topnavbar nav>ul>li{
-    float: left;
-    /* border: 1px solid green; */
-    margin-left: 17px;
-    margin-right: 17px;
-    position: relative;
-}
-.topnavbar nav>ul>li>a{
-    font-size: 12px;
-    color:inherit;
-    font-weight: 700;
-    border-bottom: 3px solid transparent;
-    border-top: 3px solid transparent;
-    display: block;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    position: relative;
-}
+body{background: #efefef; margin: 0px;}
+a{color: inherit; text-decoration: none;}
+*{padding: 0px; margin: 0px;}
+ul,ol{list-style: none;}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+hr{height: 0px;border: 0;border-top: 1px solid #dadada;}
+.fl{float: left;}
+.fr{float: right;}
+.clearfix::after{content: "";display: block;clear:both;}
+ 
+.topnavbar{padding: 20px 0;position: fixed;top: 0;left: 0;width: 100%;transition: all 0.5s;color: #b7b7b7;}
+.topnavbar.sticky{background: #fff;padding: 10px 0;box-shadow: 0 0 10px rgba(0,0,0,0.5);z-index: 1;color: #3d4451;}
+.topnavbar-c{padding: 0 16px;}
+.topnavbar nav{padding-top: 6px;padding-bottom: 2px;}
+.topnavbar nav>ul{list-style: none;margin:0;padding: 0;/* border: 1px solid red; */}
+.topnavbar nav>ul>li{float: left;/* border: 1px solid green; */margin-left: 17px;margin-right: 17px;position: relative;}
+.topnavbar nav>ul>li>a{font-size: 12px;color:inherit;font-weight: 700;border-bottom: 3px solid transparent;border-top: 3px solid transparent;display: block;padding-top: 5px;padding-bottom: 5px;position: relative;}
 .topnavbar nav > ul > li.active > a::after,
-.topnavbar nav > ul > li.highlight > a::after{
-    content: "";
-    display: block;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width:100%;
-    height: 3px;
-    animation: muneBottom 0.5s;
-    background: #e35c64;
-}
+.topnavbar nav > ul > li.highlight > a::after{content: "";display: block;position: absolute;top: 100%;left: 0;width:100%;height: 3px;animation: muneBottom 0.5s;background: #e35c64;}
 @keyframes muneBottom{
     0%{
         width: 0;
@@ -83,17 +25,7 @@ hr{height: 0px;border: 0;border-top: 1px solid #dadada;
         width: 100%;
     }
 }
-.topnavbar .submenu{
-    display: none;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background: #fff;
-    color: #3d4451;
-    animation: submenuright 0.5s;
-    box-shadow: 0 0 3px rgba(0,0,0,0.5);
-    cursor: default;
-}
+.topnavbar .submenu{display: none;position: absolute;top: 100%;right: 0;background: #fff;color: #3d4451;animation: submenuright 0.5s;box-shadow: 0 0 3px rgba(0,0,0,0.5);cursor: default;}
 @keyframes submenuright{
     0%{
         margin-right: 100%;
@@ -102,32 +34,12 @@ hr{height: 0px;border: 0;border-top: 1px solid #dadada;
         margin-right: 0;
     }
 }
-.topnavbar li.active .submenu{
-    display: block;
-}
-.topnavbar .submenu > li{
-    white-space: nowrap;
-    padding: 5px 10px;
-}
-.topnavbar .logo {
-    font-size: 25px;
-    font-family: "Fredoka One";
-    padding-top: 3px;
-    padding-bottom: 4px;
-    font-weight: 700;
-}
-.topnavbar .logo .rs{
-    color: #e35c64;
-    margin-right: 4px;
-}
-.topnavbar .logo .card{
-    color: #919499;
-}
-.banner{
-     height: 515px;
-     background: url(./img/rs-cover-2-2-1-1.jpg) no-repeat center center;
-    background-size: cover;
-}
+.topnavbar li.active .submenu{display: block;}
+.topnavbar .submenu > li{white-space: nowrap;padding: 5px 10px;}
+.topnavbar .logo {font-size: 25px;font-family: "Fredoka One";padding-top: 3px;padding-bottom: 4px;font-weight: 700;}
+.topnavbar .logo .rs{color: #e35c64;margin-right: 4px;}
+.topnavbar .logo .card{color: #919499;}
+.banner{height: 515px;background: url(./img/rs-cover-2-2-1-1.jpg) no-repeat center center;background-size: cover;}
 .banner .mask{
     height: 515px;
     background-color: rgba(0,0,0,0.8);
@@ -328,35 +240,7 @@ section.sample > nav .bar .nbar{
     background: #e35c64;
     border-radius: 3px;
 }
-section.sample > nav .bar.state-1 .nbar{
-    margin-left: 0;
-    width: 50px;
-}
-section.sample > nav .bar.state-2 .nbar{
-    margin-left: 67px;
-    width: 50px;
-}
-section.sample > nav .bar.state-3 .nbar{
-    margin-left: 140px;
-    width: 96px;
-}
-section.sample > .works{
-    position: relative;
-    /* border: 1px solid red; */
-    height: 576px;
-    margin-top: 30px;
-}
-section.sample > .works .big,
-section.sample > .works .small1,
-section.sample > .works .small2{
-    position: absolute;
-}
-section.sample > .works .small1{
-    top: 0px;
-    left: 644px;
-}
-section.sample > .works .small2{
-    top: 298px;
-    left: 644px;
-}
-
+section.sample > h2{margin-bottom: 32px;}
+section.sample .swiper-container {width: 800px;height: 600px;} 
+section.sample .swiper-slide{background: #fff;}
+section.sample .swiper-button-prev,section.sample .swiper-button-next{background-color: rgba(255,255,255,0.5);width: 60px;height: 60px;border-radius: 50%;}
