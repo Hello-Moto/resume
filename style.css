@@ -244,3 +244,4 @@ section.sample > h2{margin-bottom: 32px;}
 section.sample .swiper-container {width: 800px;height: 600px;} 
 section.sample .swiper-slide{background: #fff;}
 section.sample .swiper-button-prev,section.sample .swiper-button-next{background-color: rgba(255,255,255,0.5);width: 60px;height: 60px;border-radius: 50%;}
+.icon {width: 1em; height: 1em;vertical-align: -0.15em;fill: currentColor;overflow: hidden;}
